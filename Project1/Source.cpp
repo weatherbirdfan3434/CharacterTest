@@ -17,10 +17,53 @@ class InvalidRangeException {
 };
 int main(void) {
 	try {
-		cout << character('A', 2) << endl; //Should be C
+		cout << character('A', 2) << endl; //Should be 'C'
 	}
 	catch (InvalidCharacterException) {
-		cout << "Starting character is not a letter";
+		cout << "Starting character is not a letter." << endl;
+	}
+	catch (InvalidCharacterException) {
+		cout << "Range is invalid" << endl;
+	}
+
+	try {
+		cout << character('Z', -1) << endl; //Should be 'Y'
+	}
+	catch (InvalidCharacterException) {
+		cout << "Starting character is not a letter." << endl;
+	}
+	catch (InvalidCharacterException) {
+		cout << "Range is invalid" << endl;
+	}
+
+	try {
+		cout << character('Z', 2) << endl; //Should be 'b'
+	}
+	catch (InvalidCharacterException) {
+		cout << "Starting character is not a letter." << endl;
+	}
+	catch (InvalidCharacterException) {
+		cout << "Range is invalid" << endl;
+	}
+
+	try {
+		cout << character('a', 30) << endl; //Should be invalid range
+	}
+	catch (InvalidCharacterException) {
+		cout << "Starting character is not a letter." << endl;
+	}
+	catch (InvalidCharacterException) {
+		cout << "Range is invalid" << endl;
+	}
+
+	try {
+		cout << character('%', 1) << endl; //Should be invalid character
+	}
+	catch (InvalidCharacterException) {
+		cout << "Starting character is not a letter." << endl;
+	}
+	catch (InvalidCharacterException) {
+		cout << "Range is invalid" << endl;
 	}
 }
 
