@@ -37,7 +37,7 @@ int main(void) {
 	}
 
 	try {
-		cout << character('Z', 2) << endl; //Should be 'b'
+		cout << character('Z', 2) << endl; //Should be invalid range
 	}
 	catch (InvalidCharacterException) {
 		cout << "Starting character is not a letter." << endl;
