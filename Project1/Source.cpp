@@ -22,7 +22,7 @@ int main(void) {
 	catch (InvalidCharacterException) {
 		cout << "Starting character is not a letter." << endl;
 	}
-	catch (InvalidCharacterException) {
+	catch (InvalidRangeException) {
 		cout << "Range is invalid" << endl;
 	}
 
@@ -32,7 +32,7 @@ int main(void) {
 	catch (InvalidCharacterException) {
 		cout << "Starting character is not a letter." << endl;
 	}
-	catch (InvalidCharacterException) {
+	catch (InvalidRangeException) {
 		cout << "Range is invalid" << endl;
 	}
 
@@ -42,7 +42,7 @@ int main(void) {
 	catch (InvalidCharacterException) {
 		cout << "Starting character is not a letter." << endl;
 	}
-	catch (InvalidCharacterException) {
+	catch (InvalidRangeException) {
 		cout << "Range is invalid" << endl;
 	}
 
@@ -52,7 +52,7 @@ int main(void) {
 	catch (InvalidCharacterException) {
 		cout << "Starting character is not a letter." << endl;
 	}
-	catch (InvalidCharacterException) {
+	catch (InvalidRangeException) {
 		cout << "Range is invalid" << endl;
 	}
 
@@ -62,7 +62,7 @@ int main(void) {
 	catch (InvalidCharacterException) {
 		cout << "Starting character is not a letter." << endl;
 	}
-	catch (InvalidCharacterException) {
+	catch (InvalidRangeException) {
 		cout << "Range is invalid" << endl;
 	}
 }
